@@ -57,33 +57,35 @@ make lib
 ```
   
 - VS2017 Command prompt 실행 후 다음 명령어 실행  
-![image](https://user-images.githubusercontent.com/33209778/60563964-d1164c00-9d98-11e9-8b49-1499b0cb30af.png)  
 ```
 d:
 cd d:\src\ARPACK
 lib.exe /machine:X64 /def:arpack_x64.def
 ```
+![image](https://user-images.githubusercontent.com/33209778/60563964-d1164c00-9d98-11e9-8b49-1499b0cb30af.png)  
+
   
 ## 4. VS에서 ARPACK link
 - VS 실행 후 아래와 같이 진행  
 ![image](https://user-images.githubusercontent.com/33209778/60564220-d0ca8080-9d99-11e9-9e05-b53b96f24089.png)  
   
 - 디버깅->환경 항목에서 다음 코드 추가 ( build 과정에서 이용한 cygwin의 .dll 파일들 path 추가)  
-![image](https://user-images.githubusercontent.com/33209778/60564313-2141de00-9d9a-11e9-9d0a-8a3978802980.png)  
 ```
 PATH=D:\src\ARPACK;%PATH%
 PATH=D:\cygwin64\usr\x86_64-w64-mingw32\sys-root\mingw\bin;%PATH%
 ```
+![image](https://user-images.githubusercontent.com/33209778/60564313-2141de00-9d9a-11e9-9d0a-8a3978802980.png)  
   
 - 링커->일반->추가 라이브러리 디렉터리 항목에서 다음 코드 추가 ( build 된 .lib 파일 path 추가 )  
-![image](https://user-images.githubusercontent.com/33209778/60564815-14be8500-9d9c-11e9-9eee-c59c4f9a8785.png)  
 ```
 D:\src\ARPACK
 ```
+![image](https://user-images.githubusercontent.com/33209778/60564815-14be8500-9d9c-11e9-9eee-c59c4f9a8785.png)  
   
-- 링커->입력->추가 종속성 항목에서 기존 코드 앞에 다음 코드 추가 ( build 된 .lib 파일 추가 )
-![image](https://user-images.githubusercontent.com/33209778/60564948-90203680-9d9c-11e9-9f56-b898536c6e42.png)  
+- 링커->입력->추가 종속성 항목에서 기존 코드 앞에 다음 코드 추가 ( build 된 .lib 파일 추가 )  
 ```
 arpack_x64.lib;
 ```
+![image](https://user-images.githubusercontent.com/33209778/60564948-90203680-9d9c-11e9-9f56-b898536c6e42.png)  
+
 
