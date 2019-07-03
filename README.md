@@ -13,6 +13,7 @@ ARPACK : Large scale eigenvalue problem들을 계산하기 위해 만든 fortran
 - **이 자료는 Cygwin 경로를 D:\cygwin64 기준으로 작성**
 ![image](https://user-images.githubusercontent.com/33209778/60559679-2bf37780-9d88-11e9-8046-5da79f298912.png)  
 ![image](https://user-images.githubusercontent.com/33209778/60559697-3f9ede00-9d88-11e9-8157-1767914e5d79.png)  
+- 아래와 같이 오류가 나더라도 '무시'하고 진행
 ![image](https://user-images.githubusercontent.com/33209778/60559718-58a78f00-9d88-11e9-81d7-8fd92e0ebaea.png)  
 ![image](https://user-images.githubusercontent.com/33209778/60559747-6f4de600-9d88-11e9-918d-903a9e373cd2.png)  
 ![image](https://user-images.githubusercontent.com/33209778/60559772-8096f280-9d88-11e9-97e3-03bdb6005d45.png)  
